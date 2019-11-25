@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+     <category>
+      <pattern>Hello</pattern>
+      <template>
+         <delay>2</delay>Hello! My name is Bob? What is your name?
+      </template>  
+   </category>
+
+    <category>
+      <pattern>Hi</pattern>
+      <template>
+         <srai>Hello</srai>
+      </template>  
+   </category>
+   
+    <category>
+      <pattern>Hey</pattern>
+      <template>
+         <srai>Hello</srai>
+      </template>  
+   </category>
+   
+   <category>
+      <pattern>My name is *</pattern>
+      <template>
+         <delay>2</delay>Hello <set name = "username"><star index="1"/></set>!
+         <delay>1</delay>I assume you are a Computer Science major. Which are you more interested in...
+         <button>
+            <text>Business</text>
+                <postback>business</postback>
+            </button>
+            <button>
+                <text>Tech</text>
+                <postback>technical</postback>
+            </button>
+      </template>  
+   </category>
+   
+   <category>
+      <pattern>I am *</pattern>
+      <template>
+        <srai>My name is *</srai>
+        </template>  
+   </category>
+  
+   <category>
+      <pattern>Bye</pattern>
+      <template>
+        Bye <get name = "username"/>! Thanks for the conversation!
+      </template>  
+   </category>  
+</aiml>

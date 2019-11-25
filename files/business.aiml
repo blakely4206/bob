@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    <category>
+      <template>
+        I'm sorry, I did not understand 
+        </template>  
+   </category>
+   
+   
+	<!-- insert your AIML categories here -->
+	 <category>
+      <pattern>business</pattern>
+        <template>
+        Do you like to take charge and interact with people
+        </template>  
+   </category>
+   
+ <category>
+      <pattern>YES</pattern>
+      <that>Do you like to take charge and interact with people</that>
+      <template>IT Project Management might be a career choice for you!
+        <button>
+            <text>Project Management</text>
+            <url>https://en.wikipedia.org/wiki/Project_management</url>
+        </button>
+        </template>
+   </category>
+   
+    <category>
+      <pattern>NO</pattern>
+      <that>Do you like to take charge and interact with people</that>
+      <template>Systems Analyst might be a career choice for you!
+        <button>
+            <text>Systems Analyst</text>
+            <url>https://en.wikipedia.org/wiki/Systems_analyst</url>
+        </button>
+        </template>
+   </category>
+
+</aiml>

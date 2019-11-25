@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	  <category>
+      <pattern>technical</pattern>
+        <template>
+        Do you enjoy building web pages?
+        </template>  
+   </category>
+  
+   <category>
+      <pattern>YES</pattern>
+      <that>Do you enjoy building web pages</that>
+      <template>Being a Web Developer might be the career choice for you!
+      <button>
+            <text>Web Developer</text>
+            <url>https://en.wikipedia.org/wiki/Web_developer</url>
+        </button>
+        </template>
+   </category>
+   
+    <category>
+      <pattern>NO</pattern>
+      <that>Do you enjoy building web pages</that> 
+      <template>Do you enjoy working with large amounts of data</template>
+   </category>
+   
+    <category>
+      <pattern>YES</pattern>
+      <that>Do you enjoy working with large amounts of data</that>
+      <template>Being a Database Administrator might be the career choice for you!
+      <button>
+            <text>Database Administrator</text>
+            <url>https://en.wikipedia.org/wiki/Database_administrator</url>
+        </button>
+        </template>
+   </category>
+   
+    <category>
+      <pattern>NO</pattern>
+      <that>Do you enjoy working with large amounts of data</that> 
+      <template>Well in that case you should probably work as a Software Developer! 
+      <button>
+            <text>Software Developer</text>
+            <url>https://en.wikipedia.org/wiki/Programmer</url>
+        </button>
+      </template>
+   </category>
+   
+</aiml>
+
